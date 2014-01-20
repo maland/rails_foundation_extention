@@ -1,12 +1,12 @@
 # RailsFoundationExtention
 
-TODO: Write a gem description
+useful rails extentions for ZURB's Foundation framework version 5
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'rails_foundation_extention'
+    gem 'rails_foundation_extention', git: 'git://github.com/maland/rails_foundation_extention.git'
 
 And then execute:
 
@@ -16,9 +16,25 @@ Or install it yourself as:
 
     $ gem install rails_foundation_extention
 
+**Requires Ruby 1.9.2 or later.**
+
 ## Usage
 
-TODO: Write usage instructions here
+adds following helper methods to your application
+
+### row helper
+
+```erb
+<%= r 'your_classes' do %>
+  …your content…
+<% end %>
+```
+
+```html
+<div class="row your_classes">
+  …your content…
+</div>
+```
 
 ## Contributing
 

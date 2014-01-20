@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = RailsFoundationExtention::VERSION
   spec.authors       = ["Muhammad H.M. Härter"]
   spec.email         = ["muhammad.haerter@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{useful rails extentions for ZURB's Foundation framework}
+  spec.summary       = %q{adds some helpers to develop faster responsive views with Foundation}
+  spec.homepage      = "https://github.com/maland/rails_foundation_extention"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
