@@ -34,6 +34,7 @@ module RailsFoundationExtention
     def c(add_classes = '', content = nil, &block)
       if block_given?
         content = capture(&block)
+        add_classes = 'small-6' if add_classes.blank?
       else
         if content.blank?
           content = add_classes
@@ -43,6 +44,7 @@ module RailsFoundationExtention
     
       content_tag :div, content, class: 'column '+add_classes
     end
+    
     
     def span(content, css_class = '')
       content_tag :span, content, class: css_class
