@@ -51,8 +51,8 @@ module RailsFoundationExtention
     end
 
 
-    def ln(date_time_value)
-      date_time_value.blank? ? '[unkown]' : l(date_time_value)
+    def ln(date_time_value, placeholder = '[unkown]', options = {} )
+      date_time_value.blank? ? placeholder : l(date_time_value, options)
     end
 
   end

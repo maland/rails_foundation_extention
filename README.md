@@ -24,14 +24,30 @@ adds following helper methods to your application
 
 ### row helper
 
+this
 ```erb
 <%= r 'your_classes' do %>
   …your content…
 <% end %>
 ```
-
+generates that
 ```html
 <div class="row your_classes">
+  …your content…
+</div>
+```
+
+### column helper
+
+this
+```erb
+<%= c 'your_classes' do %>
+  …your content…
+<% end %>
+```
+generates that
+```html
+<div class="column your_classes">
   …your content…
 </div>
 ```
